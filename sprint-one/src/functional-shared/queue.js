@@ -29,7 +29,7 @@ queueMethods.dequeue = function(value) {
   return result;
 };
 
-queueMethods.size = function(value) {
+queueMethods.size = function() {
   return Object.keys(this.storage).length;
 };
 
