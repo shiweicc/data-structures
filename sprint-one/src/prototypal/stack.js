@@ -14,7 +14,7 @@ stackMethods.push = function (value) {
   this.index++;
 };
 
-stackMethods.pop = function (value) {
+stackMethods.pop = function () {
 
   this.index--;
   var result = this.storage[this.index];
