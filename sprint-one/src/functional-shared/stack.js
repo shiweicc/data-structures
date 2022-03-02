@@ -17,12 +17,10 @@ stackMethods.push = function (value) {
 };
 
 stackMethods.pop = function (value) {
-  if (this.index > 0) {
-    this.index--;
-    var result = this.storage[this.index];
-    delete this.storage[this.index];
-    return result;
-  }
+  this.index--;
+  var result = this.storage[this.index];
+  delete this.storage[this.index];
+  return result;
 };
 
 stackMethods.size = function () {
